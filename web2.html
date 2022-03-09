@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title></title>
+    <link rel="stylesheet" href="Web.css">
+    <script src="./Web.js"></script>
+</header>
+
+<center>
+
+<body class="mybodyclass">  
+
+<div>
+    <h1 class="msg" > Welcome to BeeKeeper </h1> <br> 
+    <div class="image1">
+
+    </div> <br>
+   <h5>Hi <p id="accountname"></p>This is your Account</h5> 
+    <hr class="line"> 
+</div>
+
+<table>
+    <caption>Your Account Information is in the Table Below</caption> <br> <br>
+    <tr>
+        
+        <th>Username</th>
+        <th>Email Address</th>
+        <th>Birthday</th>
+        <th>Password</th>
+        <th>Account Type</th>
+       
+        
+
+     </tr>
+         <tr class="col3">
+             <td id="outputName"></td>
+             <td id="outputemail"></td>
+             <td id="outputBirthday"></td> 
+             <td id="outputpassword"></td>
+             <td id="Account"></td>   
+          </tr>
+
+       
+ </table>
+
+</body>
+</center>
+<script>
+    document.getElementById("outputName").innerText = localStorage.getItem("username");
+    document.getElementById("accountname").innerText = localStorage.getItem("username");;
+    document.getElementById("outputemail").innerText = localStorage.getItem("email");
+    document.getElementById("outputBirthday").innerText = localStorage.getItem("birthday");
+    document.getElementById("outputpassword").innerText = localStorage.getItem("password");
+    document.getElementById("Account").innerHTML = localStorage.getItem("accType");
+</script>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+    <html>
+      <head>
+          <link rel="stylesheet" href="./Web.css">
+          <script src="./Web.js"></script>
+           <title>Sign Up</title>    
+        </head>
+        <center>
+        <body class="mybodyclass">
+
+
+
+
+        <form name="signupForm" method="GET" action="web2.html"
+        onSubmit="return formValidation();">
+
+              <h1 class="msg" > Welcome to BeeKeeper </h1> <br> 
+              <div class="image1"></div> <br>
+              <hr class="line">  
+              <h2> Sign Up Below</h2>    
+                <lable for="username"> Username: </lable> <input type="text" id="userName" onchange="return formValidation();"> 
+                     <br> <br> 
+                 <label for="email address">Email Address: </lable>  <input type="text" id="email_ID" onchange="return formValidation();"> 
+                     </br> <br>      
+                <label for="Birthday">Birthday: </lable> <input type="date" id="birthDay"> 
+                     </br> <br>   
+                <label for="Password">Password: </lable> <input type="password" id ="password" onchange="return formValidation();">     
+                      </br> <br>
+                <label for="verify Password">Verify Password:  </lable> <input type="password" id="password2" onchange="return formValidation();">     
+                     </br> <br> 
+                <b> Desired Account Type <b> 
+                         <input id="personal" type="radio" id="personal" name="accountType" value="Personal" checked="" > 
+                         <label for="user">Personal</label> 
+
+                         <input id="business" type="radio"id="business" name= "accountType" value="Business">   
+                         <label for ="user">Business</label>
+
+                         <input id="enterprise" type="radio" id="enterprise" name="accountType" value="enterprise">  
+                         <label for ="user"> enterprise</label>
+
+                         <input id="other" type="radio" id="Other" name="accountType" value="other">  
+                         <label for ="user"> other</label>   <br> <br> 
+                         <button> Submit </button>
+                         
+            </form>
+                    
+                <fieldset>   
+                
+                    <legend>Pricing</legend>
+               <table>
+                   <caption> Personal accounts allow only 1 private
+                    repo, please visit our <a href="https://www.amazon.com/"> main site </a> for more information</caption> <br> <br>
+                   <tr>
+                       <th></th>
+                       <th>Personal(1-3 users)</th>
+                       <th>Business(4-20 users)</th>
+                       <th>Enterprise(21+ users)</th>
+                       
+
+                    </tr>
+                        <tr class="col3">
+                            <td> 1 Repo</td>
+                            <td> Free</td>
+                            <td>$12 repo/month</td> 
+                            <td rowspan="3"> <h4 >  Contact Sales </h4> </td>
+                            
+                         </tr>
+
+                         
+                         <tr>
+                            <td> 2-9 Repo</td>
+                            <td>$ 8 repo/month</td>
+                            <td>$ 10 repo/month</td>
+                            
+                            
+
+                         </tr>
+                         
+                         <tr>
+                            <td> 10+ Repo</td>
+                            <td>$ 6 repo/month</td>
+                            <td>$ 8 repo/month</td>
+                            
+
+                         </tr>     
+                </table>
+
+            </fieldset>            
+            </body>
+    
+
+        
+
+     
+    </script>
+            
+          </center>
+        
+        
+    
+    </html>
